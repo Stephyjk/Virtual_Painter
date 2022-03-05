@@ -9,7 +9,7 @@
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
     <meta name="generator" content="Hugo 0.88.1" />
-    <title>Sentiment Analysis</title>
+    <title>Computer Vision</title>
 
     <link
       rel="canonical"
@@ -29,18 +29,17 @@
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="mb-auto">
         <div>
-          <h3 class="float-md-start mb-0">NLP Project</h3>
+          <h3 class="float-md-start mb-0">Computer Vision Project</h3>
         </div>
       </header>
 
       <main class="px-3">
-        <h1>Sentiment Analysis</h1>
+        <h1>Virtual Painter</h1>
         <br />
         <br />
         <div class="container col-md-4 lead">
-          <h5>Enter Review Here</h5>
-          <br />
-          <form
+          <img id="bg" src="{{url_for('video_feed')}}" />
+          <!-- <form
             action="/sentiment_analysis_prediction"
             method="post"
             enctype="multipart/form-data"
@@ -52,23 +51,9 @@
               rows="4"
               cols="50"
             ></textarea>
-            <br />
+            <br /> 
             <input type="submit" />
-          </form>
-        </div>
-        <br />
-        <div class="container">
-          {% if probability %}
-          <div>
-            <img src="{{ image }}" alt="Image" />
-            {% endif %}
-            <!-- <h2>{{response}}</h2> -->
-          </div>
-          <div></div>
-          <h4>Sentiment: {% if probability %} {{ sentiment }} {% endif %}</h4>
-          <h4>
-            Probability: {% if probability %} {{ probability }} {% endif %}
-          </h4>
+          </form>-->
         </div>
       </main>
     </div>
